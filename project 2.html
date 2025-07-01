@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putting everything together</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        section, header, footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+            color: black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        input, button {
+            padding: 10px;
+            margin: 8px 0;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background-color: gold;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header style="
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+">
+
+  <!-- Lighter overlay for more visible background -->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* reduced opacity */
+    z-index: 1;
+  "></div>
+
+  <!-- Header Content -->
+  <div style="text-align: center; z-index: 2; padding: 20px;">
+    <h1 style="
+        font-size: 2em;
+        margin: 0;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    ">
+      🌍 Welcome to Planet Earth Explorer
+    </h1>
+    <p style="
+        font-size: 1.1em;
+        margin-top: 10px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    ">
+      Discover Earth's wonders — from oceans to orbits! 🌊🛰️
+    </p>
+  </div>
+
+</header>
+
+
+<section style="background-color: rgba(255, 255, 255, 0.95); color: #222; padding: 30px; margin: 20px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.1);">
+  <h2 style="text-align: center; font-size: 2em; margin-bottom: 20px; color: #004d99;">
+    🌍  The world we live in
+  </h2>
+
+  <div style="text-align: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" 
+         alt="Earth from Space" 
+         style="width: 400px; height: auto; border-radius: 10px; margin-bottom: 20px;" />
+  </div>
+
+  <p style="font-size: 1.1em; line-height: 1.7;">
+    <strong><a href="https://solarsystem.nasa.gov/planets/earth/overview/" target="_blank" style="color: #0066cc; text-decoration: none;">Earth</a></strong> is the third planet from the Sun and the only known celestial body in the universe that supports <strong><a href="https://en.wikipedia.org/wiki/Life" target="_blank" style="color: #0066cc;">life</a></strong>.
+    It is approximately <strong><a href="https://www.britannica.com/place/Earth/Basic-astronomical-data" target="_blank" style="color: #0066cc;">4.54 billion years</a></strong> old and has a unique composition that makes it habitable.
+
+    Around <strong><a href="https://oceanservice.noaa.gov/facts/oceanwater.html" target="_blank" style="color: #0066cc;">71% of Earth's surface</a></strong> is covered with water, mainly in the form of oceans, while the remaining 29% consists of continents and islands.
+    Earth’s shape is an <strong><a href="https://en.wikipedia.org/wiki/Figure_of_the_Earth" target="_blank" style="color: #0066cc;">oblate spheroid</a></strong>—slightly flattened at the poles and bulging at the equator.
+
+    The <strong><a href="https://www.nasa.gov/earth/earths-atmosphere/" target="_blank" style="color: #0066cc;">atmosphere</a></strong>, composed primarily of <strong>nitrogen (78%)</strong> and <strong>oxygen (21%)</strong>, filters harmful solar radiation and maintains a stable climate.
+
+    Earth rotates on its axis once every <strong><a href="https://en.wikipedia.org/wiki/Rotation_of_Earth" target="_blank" style="color: #0066cc;">24 hours</a></strong>, causing day and night, and orbits the Sun every <strong><a href="https://scijinks.gov/earth-orbits-sun/" target="_blank" style="color: #0066cc;">365.25 days</a></strong>, creating the seasons.
+    These seasons occur due to its <strong><a href="https://en.wikipedia.org/wiki/Axial_tilt" target="_blank" style="color: #0066cc;">axial tilt of 23.5°</a></strong>.
+
+    Earth's surface is dynamic, shaped by <strong><a href="https://www.britannica.com/science/plate-tectonics" target="_blank" style="color: #0066cc;">tectonic activity</a></strong>, <strong><a href="https://www.usgs.gov/natural-hazards/volcano-hazards" target="_blank" style="color: #0066cc;">volcanoes</a></strong>, <strong>erosion</strong>, and <strong>weather systems</strong>.
+    The landmass is split into <strong><a href="https://www.worldometers.info/geography/how-many-continents-are-there/" target="_blank" style="color: #0066cc;">seven continents</a></strong> and surrounded by <strong><a href="https://oceanservice.noaa.gov/facts/howmanyoceans.html" target="_blank" style="color: #0066cc;">five major oceans</a></strong>.
+
+    Earth is home to a vast <strong><a href="https://en.wikipedia.org/wiki/Biosphere" target="_blank" style="color: #0066cc;">biosphere</a></strong>—a global ecosystem that includes millions of species of plants, animals, and microorganisms.
+
+    Humans, the most dominant species, have built advanced civilizations but also face environmental challenges such as <strong><a href="https://www.unep.org/explore-topics/climate-action" target="_blank" style="color: #cc3300;">pollution</a></strong>, <strong><a href="https://www.worldwildlife.org/threats/deforestation" target="_blank" style="color: #cc3300;">deforestation</a></strong>, and <strong><a href="https://climate.nasa.gov/" target="_blank" style="color: #cc3300;">climate change</a></strong>.
+
+    Earth’s only natural satellite, the <strong><a href="https://moon.nasa.gov/" target="_blank" style="color: #0066cc;">Moon</a></strong>, stabilizes the planet’s rotation and influences ocean tides.
+
+    From space, Earth shines as a vibrant blue planet—an iconic symbol of life in the vast cosmos.
+  </p>
+</section>
+
+<section style="background-color: #eaf4fb; padding: 30px; margin: 20px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.08);">
+  <h2 style="text-align: center; font-size: 2em; color: #004d99; margin-bottom: 20px;">
+    🌍 <strong>About The Earth</strong>
+  </h2>
+
+  <div style="text-align: center;">
+    <img 
+      src="https://www.snexplores.org/wp-content/uploads/2023/01/860_earthlayers.jpg" 
+      alt="Earth Layers Diagram"
+      style="width: 600px; height: auto; border-radius: 10px; margin-bottom: 20px;"
+    />
+  </div>
+
+  <ul style="font-size: 1.05em; line-height: 1.7; padding-left: 20px; max-width: 900px; margin: auto; color: #333;">
+    <li>🌍 <strong>Earth</strong> is the third planet from the Sun and the only one known to support <a href="https://en.wikipedia.org/wiki/Life" target="_blank" style="color: #0066cc;">life</a>.</li>
+    <li>🌊 About 71% of <strong>Earth's surface</strong> is covered by water, mostly oceans.</li>
+    <li>🌐 It has a breathable <a href="https://www.nasa.gov/earth/earths-atmosphere/" target="_blank" style="color: #0066cc;">atmosphere</a> of nitrogen (78%) and oxygen (21%).</li>
+    <li>🌞 Earth takes <strong>365.25 days</strong> to orbit the Sun and <strong>24 hours</strong> to rotate once.</li>
+    <li>🌱 It hosts <strong>millions of species</strong>, making it rich in biodiversity.</li>
+    <li>🌋 Earth’s surface is shaped by <a href="https://en.wikipedia.org/wiki/Plate_tectonics" target="_blank" style="color: #0066cc;">tectonic plates</a>, mountains, volcanoes, and earthquakes.</li>
+    <li>🔗 <strong>Notable Moons:</strong> <a href="https://moon.nasa.gov/" target="_blank" style="color: #0066cc;">MOON</a></li>
+    <li>🧊 <strong>Inner Core:</strong> Solid iron and nickel at extreme temperatures and pressure.</li>
+    <li>🔥 <strong>Outer Core:</strong> Liquid iron and nickel generating Earth's <a href="https://earthobservatory.nasa.gov/features/MagneticField" target="_blank" style="color: #0066cc;">magnetic field</a>.</li>
+    <li>🌋 <strong>Mantle:</strong> Thick solid layer that drives <a href="https://www.nationalgeographic.com/science/article/mantle" target="_blank" style="color: #0066cc;">plate tectonics</a>.</li>
+    <li>🌍 <strong>Crust:</strong> Earth's outer shell where all life exists.</li>
+  </ul>
+</section>
+
+
+<section style="background-color: #f2faff; padding: 30px; margin: 20px; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.08);">
+  <h2 style="text-align: center; font-size: 2em; color: #004d99; margin-bottom: 20px;">
+    🌍 <strong>Close-Up View of Earth</strong>
+  </h2>
+
+  <div style="text-align: center; margin-bottom: 25px;">
+    <iframe width="360" height="215" 
+      src="https://www.youtube.com/embed/r_jh0o0vfp8?si=ichODIt5u20rOsuu" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen
+      style="border-radius: 10px;">
+    </iframe>
+  </div>
+
+  <p style="font-size: 1.05em; line-height: 1.7; color: #333; max-width: 900px; margin: auto;">
+    When observed up close, <strong>Earth</strong> transforms from a distant blue sphere into a breathtaking world of intricate detail and dynamic beauty. The <strong>crust</strong> reveals towering mountain peaks, rolling hills, sprawling deserts, and lush forests teeming with life. Rivers wind through valleys, lakes mirror the sky, and oceans churn under the influence of the <strong><a href="https://moon.nasa.gov/" target="_blank" style="color: #0066cc;">Moon’s gravity</a></strong>.
+
+    The <strong><a href="https://www.nasa.gov/earth/earths-atmosphere/" target="_blank" style="color: #0066cc;">atmosphere</a></strong> comes alive through winds, storms, and ever-changing clouds. Beneath the surface, <strong><a href="https://www.nationalgeographic.com/science/article/mantle" target="_blank" style="color: #0066cc;">volcanoes</a></strong> and <strong><a href="https://en.wikipedia.org/wiki/Plate_tectonics" target="_blank" style="color: #0066cc;">tectonic boundaries</a></strong> reshape continents.
+
+    Life thrives in every form—from microscopic organisms to towering trees and human cities. Civilization marks the surface with vibrant lights, vast roadways, and innovation, but also faces challenges like <strong><a href="https://www.unep.org/explore-topics/climate-action" target="_blank" style="color: #cc3300;">climate change</a></strong> and <strong><a href="https://www.worldwildlife.org/threats/deforestation" target="_blank" style="color: #cc3300;">deforestation</a></strong>.
+
+    A close-up of Earth is more than a view—it's a vivid reminder of a planet alive, ever-evolving, and deeply interconnected.
+  </p>
+</section>
+
+<section style="background-color: #eef8ff; padding: 30px; margin: 20px; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.08);">
+  <h2 style="text-align: center; font-size: 2em; color: #004d99; margin-bottom: 20px;">
+    🌍 <strong>Top Facts About Earth</strong>
+  </h2>
+
+  <div style="text-align: center;">
+    <img 
+      src="fact of earth.jpg" 
+      alt="Facts of Earth"
+      style="width: 500px; height: auto; border-radius: 10px; margin-bottom: 25px;"
+    />
+  </div>
+
+  <ul style="font-size: 1.05em; line-height: 1.7; color: #333; max-width: 900px; margin: auto; padding-left: 20px;">
+    <li>🌍 <strong>Earth is not a perfect sphere</strong> — it's an <a href="https://en.wikipedia.org/wiki/Oblate_spheroid" target="_blank" style="color: #0066cc;">oblate spheroid</a> due to its rotation.</li>
+    <li>🌈 <strong>Rainbows</strong> are full circles, but we usually see half — <a href="https://www.scientificamerican.com/article/what-is-the-shape-of-a-rainbow/" target="_blank" style="color: #0066cc;">learn why</a>.</li>
+    <li>🔋 <strong>Lightning strikes</strong> Earth about 100 times per second — see <a href="https://www.nssl.noaa.gov/education/svrwx101/lightning/" target="_blank" style="color: #0066cc;">NOAA's lightning facts</a>.</li>
+    <li>🕳️ <strong>Antarctica holds 90% of the world’s ice</strong> — <a href="https://www.britannica.com/place/Antarctica" target="_blank" style="color: #0066cc;">explore Antarctica</a>.</li>
+    <li>🐜 Earth has an estimated <strong>20 quadrillion ants</strong> — read the <a href="https://www.nature.com/articles/s41586-022-05224-4" target="_blank" style="color: #0066cc;">scientific study</a>.</li>
+    <li>🌀 The widest tornado ever recorded hit Oklahoma — <a href="https://www.ncdc.noaa.gov/news/world-record-tornado" target="_blank" style="color: #0066cc;">see NOAA data</a>.</li>
+    <li>📡 The <strong>Kola Superdeep Borehole</strong> is the deepest man-made hole — <a href="https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole" target="_blank" style="color: #0066cc;">explore here</a>.</li>
+    <li>💨 <strong>Mount Everest grows</strong> ~4 mm yearly — see <a href="https://www.nationalgeographic.com/adventure/article/everest-gets-a-little-bit-higher" target="_blank" style="color: #0066cc;">National Geographic</a>.</li>
+    <li>🌋 Over <strong>1,500 active volcanoes</strong> exist — tracked by the <a href="https://volcano.si.edu/" target="_blank" style="color: #0066cc;">Smithsonian Global Volcanism Program</a>.</li>
+    <li>🌌 <strong>Earth’s rotation is slowing</strong> — about <a href="https://www.scientificamerican.com/article/earths-rotation-is-slowing/" target="_blank" style="color: #0066cc;">1.8 milliseconds per century</a>.</li>
+  </ul>
+</section>
+
+
+<section style="background-color: #f5fbff; padding: 30px; margin: 20px; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.08);">
+  <h2 style="text-align: center; font-size: 2em; color: #004d99; margin-bottom: 20px;">
+    🌍 <strong>Average and Below Average Temperatures of Planets (°C)</strong>
+  </h2>
+
+  <div style="text-align: center;">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Solar_system_thermometer.jpg/800px-Solar_system_thermometer.jpg" 
+      alt="Planet Temperatures"
+      style="width: 300px; height: auto; border-radius: 10px; margin-bottom: 20px;"
+    />
+  </div>
+
+  <p style="font-size: 1.05em; line-height: 1.7; color: #333; max-width: 900px; margin: auto;">
+    Planets in our <a href="https://solarsystem.nasa.gov/planets/overview/" target="_blank" style="color: #0066cc;">solar system</a> experience vastly different temperatures based on their distance from the Sun, atmospheric composition, and surface characteristics. 
+    For example, <a href="https://solarsystem.nasa.gov/planets/mercury/overview/" target="_blank" style="color: #0066cc;">Mercury</a> has extreme highs and lows due to its thin atmosphere, while <a href="https://solarsystem.nasa.gov/planets/venus/overview/" target="_blank" style="color: #0066cc;">Venus</a> retains heat through a thick layer of carbon dioxide, making it hotter than Mercury. 
+    <a href="https://solarsystem.nasa.gov/planets/earth/overview/" target="_blank" style="color: #0066cc;">Earth</a>, uniquely, maintains a habitable range due to its balanced atmosphere. Farther out, <a href="https://solarsystem.nasa.gov/planets/neptune/overview/" target="_blank" style="color: #0066cc;">Neptune</a> and <a href="https://solarsystem.nasa.gov/planets/uranus/overview/" target="_blank" style="color: #0066cc;">Uranus</a> reach some of the coldest temperatures in the solar system. These differences help scientists understand planetary evolution and the potential for life beyond Earth.
+  </p>
+
+  <br>
+
+  <table style="border-collapse: collapse; width: 80%; margin: auto; text-align: center; font-size: 1em; background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+    <thead style="background-color: #cce6ff;">
+      <tr>
+        <th style="padding: 12px;">🌐 Planet</th>
+        <th style="padding: 12px;">🌡️ Average Temperature (°C)</th>
+        <th style="padding: 12px;">❄️ Below Average Temperature (°C)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://solarsystem.nasa.gov/planets/mercury/overview/" target="_blank" style="color: #004d99;">Mercury</a></td>
+        <td>167</td>
+        <td>-173</td>
+      </tr>
+      <tr style="background-color: #f0f8ff;">
+        <td><a href="https://solarsystem.nasa.gov/planets/venus/overview/" target="_blank" style="color: #004d99;">Venus</a></td>
+        <td>464</td>
+        <td>460</td>
+      </tr>
+      <tr>
+        <td><a href="https://solarsystem.nasa.gov/planets/earth/overview/" target="_blank" style="color: #004d99;">Earth</a></td>
+        <td>14</td>
+        <td>-89</td>
+      </tr>
+      <tr style="background-color: #f0f8ff;">
+        <td><a href="https://solarsystem.nasa.gov/planets/mars/overview/" target="_blank" style="color: #004d99;">Mars</a></td>
+        <td>-60</td>
+        <td>-125</td>
+      </tr>
+      <tr>
+        <td><a href="https://solarsystem.nasa.gov/planets/jupiter/overview/" target="_blank" style="color: #004d99;">Jupiter</a></td>
+        <td>-110</td>
+        <td>-145</td>
+      </tr>
+      <tr style="background-color: #f0f8ff;">
+        <td><a href="https://solarsystem.nasa.gov/planets/saturn/overview/" target="_blank" style="color: #004d99;">Saturn</a></td>
+        <td>-140</td>
+        <td>-178</td>
+      </tr>
+      <tr>
+        <td><a href="https://solarsystem.nasa.gov/planets/uranus/overview/" target="_blank" style="color: #004d99;">Uranus</a></td>
+        <td>-195</td>
+        <td>-224</td>
+      </tr>
+      <tr style="background-color: #f0f8ff;">
+        <td><a href="https://solarsystem.nasa.gov/planets/neptune/overview/" target="_blank" style="color: #004d99;">Neptune</a></td>
+        <td>-200</td>
+        <td>-218</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section style="background-color: #f9fcff; padding: 30px; margin: 20px; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.08);">
+  <h2 style="text-align: center; font-size: 2em; color: #004080; margin-bottom: 20px;">
+    🛠️ <strong>Our Services</strong>
+  </h2>
+
+  <p style="font-size: 1.05em; line-height: 1.7; color: #333; max-width: 900px; margin: auto;">
+    At <strong>EarthView Analytics</strong>, we bring the cosmos closer through a powerful suite of data-driven services. Whether you're a researcher, educator, student, or space enthusiast, our offerings help you explore the mysteries of our planet and the universe beyond. From real-time <a href="https://earthdata.nasa.gov/" target="_blank" style="color: #0066cc;">Earth observation data</a> to <a href="https://science.nasa.gov/mission-pages" target="_blank" style="color: #0066cc;">satellite mission tracking</a> and interactive learning modules, we empower discovery and understanding of planetary science.
+  </p>
+
+  <br>
+
+  <table style="border-collapse: collapse; width: 85%; margin: auto; text-align: center; font-size: 1em; background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+    <thead style="background-color: #cce6ff;">
+      <tr>
+        <th style="padding: 12px;">🔧 Service</th>
+        <th style="padding: 12px;">📘 Description</th>
+        <th style="padding: 12px;">🔗 Learn More</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🌐 Earth Exploration Data</td>
+        <td>Access live environmental and geospatial data from NASA and global sources.</td>
+        <td><a href="https://earthdata.nasa.gov/" target="_blank" style="color: #004d99;">NASA EarthData</a></td>
+      </tr>
+      <tr style="background-color: #f0f8ff;">
+        <td>📡 Satellite Monitoring</td>
+        <td>Track satellite missions, imagery, and orbital science in real-time.</td>
+        <td><a href="https://www.n2yo.com/?s=25544" target="_blank" style="color: #004d99;">Live Satellite Map</a></td>
+      </tr>
+      <tr>
+        <td>📊 Planet Reports & Analysis</td>
+        <td>Receive curated reports with scientific findings, graphs, and visual analytics.</td>
+        <td><a href="https://climate.nasa.gov/vital-signs/global-temperature/" target="_blank" style="color: #004d99;">NASA Climate Data</a></td>
+      </tr>
+      <tr style="background-color: #f0f8ff;">
+        <td>🎓 Space Education Resources</td>
+        <td>Interactive tools, infographics, and space facts for students and educators.</td>
+        <td><a href="https://spaceplace.nasa.gov/" target="_blank" style="color: #004d99;">NASA Space Place</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section style="background-color: #f8fefe; padding: 30px; margin: 20px; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.08);">
+  <h2 style="text-align: center; font-size: 2em; color: #006400; margin-bottom: 20px;">
+    💰 <strong>Price List</strong>
+  </h2>
+
+  <p style="font-size: 1.05em; line-height: 1.6; color: #333; max-width: 850px; margin: auto; text-align: center;">
+    Explore affordable pricing options to access Earth insights, space data, and educational tools. Whether you're a learner or a researcher, our packages are designed to suit every need.
+  </p>
+
+  <br>
+
+  <table style="border-collapse: collapse; width: 60%; margin: auto; text-align: center; font-size: 1em; background-color: #ffffff; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+    <thead style="background-color: #d1f7d6;">
+      <tr>
+        <th style="padding: 12px;">🛠️ Service</th>
+        <th style="padding: 12px;">💵 Price (INR)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🌐 Earth Data Pack</td>
+        <td>₹299</td>
+      </tr>
+      <tr style="background-color: #f1fff1;">
+        <td>📡 Satellite Image Access</td>
+        <td>₹499</td>
+      </tr>
+      <tr>
+        <td>📊 Monthly Planet Reports</td>
+        <td>₹399</td>
+      </tr>
+      <tr style="background-color: #f1fff1;">
+        <td>🎓 Education & Workshops</td>
+        <td>₹999</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section style="background-color: #f0faff; padding: 30px; margin: 20px auto; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.08); max-width: 600px;">
+  <h2 style="text-align: center; font-size: 2em; color: #004080; margin-bottom: 20px;">
+    ❓ <strong>Want to Know More?</strong>
+  </h2>
+
+  <form action="https://www.space.com/" method="get" style="display: flex; flex-direction: column; gap: 20px;">
+    
+    <input type="text" name="name" placeholder="👤 Full Name" required 
+           style="padding: 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1em;" />
+
+    <input type="email" name="email" placeholder="📧 Email Address" required 
+           style="padding: 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1em;" />
+
+    <input type="tel" name="phone" placeholder="📱 Phone Number" required 
+           style="padding: 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1em;" />
+
+    <button type="submit" 
+            style="background-color: #0077cc; color: white; padding: 12px; border: none; border-radius: 8px; font-size: 1em; cursor: pointer;">
+      🔗 Submit 
+    </button>
+
+  </form>
+</section>
+
+
+<footer style="background-color: #002b5c; color: white; text-align: center; padding: 20px 10px; font-size: 1em; margin-top: 40px; border-top: 4px solid #005bbb;">
+  <p style="margin: 0;">
+    📞 <strong>Contact:</strong> Priyanshu Sahoo |
+    📧 <strong>Email:</strong> <a href="mailto:sahoopriyanshu434@gmail.com" style="color: #ffffff; text-decoration: underline;">sahoopriyanshu434@gmail.com</a> |
+    ☎️ <strong>Phone:</strong> <a href="tel:9330666642" style="color: #ffffff; text-decoration: underline;">9330666642</a>
+  </p>
+  <p style="margin: 5px 0 0;">© 2025 EarthView Analytics. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
+
+
